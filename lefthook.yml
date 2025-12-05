@@ -1,0 +1,4 @@
+commit-msg:
+  commands:
+    check-sign-off:
+      run: "[ $(grep -c '^Signed-off-by: ' {1}) -eq 1 ]"
